@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: #ff0000;
+  position: relative;
+  top: 150px;
+}
+
+.animate {
+  -webkit-animation: jump 500ms;
+          animation: jump 500ms;
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  -webkit-animation: block 1s infinite linear;
+          animation: block 1s infinite linear;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+@-webkit-keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}/*# sourceMappingURL=style.css.map */
